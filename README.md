@@ -78,5 +78,10 @@ Parameter validation - All input parameters can be assumed OK. No need to check 
 
 ## Check it!
 
-1. `` make clean all``
-2. ``./main``
+1. `` git submodule update --init --recursive``
+2. `` sudo apt-get install build-essential cmake``
+3. ``mkdir build``
+4. ``cd build``
+5. ``cmake .. -DBUILD_GMOCK=On``
+6. ``make``
+7. ``tests/the_lift_tests``
